@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Yet another implementation of 1BRC in PHP"
 permalink: /1brc-php
 ---
