@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## List of stories
 
 ### [Yet another implementation of 1BRC in PHP](/1brc-php)

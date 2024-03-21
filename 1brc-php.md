@@ -1,6 +1,8 @@
+---
 layout: page
 title: "Yet another implementation of 1BRC in PHP"
 permalink: /1brc-php
+---
 # Yet another implementation of 1BRC in PHP
 ## It's All Gone ThePrimeagen.
 He was watching about 1BRC in GO.

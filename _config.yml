@@ -1,3 +1,6 @@
+plugins:
+  - jekyll-relative-links
+  - jekyll-remote-theme
 theme: jekyll-theme-minimal
 title: Eksandral's stories I've never told
 description: Little stories of my development life
@@ -12,8 +15,6 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-plugins:
-  - jekyll-relative-links
 relative_links:
   enabled: true
   collections: true
