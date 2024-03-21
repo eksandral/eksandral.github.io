@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Yet another implementation of 1BRC in PHP"
+author: Eksandral
 permalink: /1brc-php
 ---
-# Yet another implementation of 1BRC in PHP
 ## It's All Gone ThePrimeagen.
 He was watching about 1BRC in GO.
 A few weeks later, in the internal company's chat, I saw a link to an article on 1BRC in PHP, and people were discussing it.
