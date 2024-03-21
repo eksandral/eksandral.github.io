@@ -3,6 +3,7 @@ layout: post
 title: "Yet another implementation of 1BRC in PHP"
 author: Eksandral
 permalink: /1brc-php
+date: 2024-03-21
 ---
 ## It's All Gone ThePrimeagen.
 He was watching about 1BRC in GO.

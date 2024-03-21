@@ -26,26 +26,33 @@
 
 body {
   background-color: var(--background-color);
+  padding-top: 15px;
 }
 
 pre,
 .highlight {
   background-color: var(--block-background-color);
 }
+small{font-size: 12px;}
 
 .terminal {
   h1 {
     font-size: var(--h1-font-size);
+    color: #d65d0e;
   }
 
   h2 {
     font-size: var(--h2-font-size);
+    color: #fabd2f;
   }
 
   h3 {
     font-size: var(--h3-font-size);
+    color: #fabd2f;
   }
   code {
     font-size: 12px;
   }
+  .author {color: #689d6a; }
+  .date {color: #8ec07c;}
 }
