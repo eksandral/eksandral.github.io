@@ -6,13 +6,11 @@ permalink: /1brc-php
 date: 2024-03-21
 ---
 ## It's All Gone ThePrimeagen.
-He was watching about 1BRC in GO.
-A few weeks later, in the internal company's chat, I saw a link to an article on 1BRC in PHP, and people were discussing it.
-Then, I thought, am I capable of doing it by myself? Am I good enough in PHP to do it?
-The main issue was that PHP does not have built-in multi-thread functionality(`die("It's born to")`).
-It can create a new process with `proc_open` but is a blocking operation.
-So you can't actually compete with GO, for example.
-Until PHP 8.0 where a Fiber class was introduced.
+Everything started form the ThePrimeagen video where he was reactingt to [1BRC in GO](https://www.youtube.com/watch?v=cYng524S-MA).
+A few weeks later, in the internal company's chat, I saw (a link to an article on 1BRC in PHP)[https://dev.to/realflowcontrol/processing-one-billion-rows-in-php-3eg0], and people were discussing it.
+Then, I thought,hmm... am I capable of doing it? Am I good enough in PHP for that?
+My main concert was that I have a skill issue in multi-thread PHP. Never used it for tasks where other languages are better.
+So let's find out...
 
 ## The story...
 Let's talk about the constraints of the task.
@@ -155,7 +153,7 @@ My plan was the following:
 5. sort the result by station name and output it
 6. profit
 
-The code is provided in the [5.php](5.php) file.
+The code is provided in the [5.php](https://github.com/eksandral/1brc-php/blob/master/5.php) file.
 The result is...32 seconds
 ```fish
 ________________________________________________________
@@ -178,7 +176,7 @@ That's not good. I want to control the number of processes and CPU cores used.
 ### Use Fiber class to limit CPU core usage
 In the article [PHP Fibers: A practical example](https://aoeex.com/phile/php-fibers-a-practical-example/) provided in the internal chat, the author describes how to use the Fiber class to speed up the video file conversion process.
 The main idea is to create a pool of fibers and then execute them in parallel.
-The file [6.php](6.php) contains the idea's implementation and mostly adapts the article to my script.
+The file [6.php](https://github.com/eksandral/1brc-php/blob/master/6.php) contains the idea's implementation and mostly adapts the article to my script.
 Now I can run the script and specify the number of fibers/threads I want to use
 ```fish
 > time php -dmemory_limit=-1 6.php measurements-1000M.txt 10
@@ -229,3 +227,9 @@ Zend Engine v4.3.2, Copyright (c) Zend Technologies
     with Zend OPcache v8.3.2, Copyright (c), by Zend Technologies
 
 ```
+
+
+Links:
+- [repo with code](https://github.com/eksandral/1brc-php)
+- [Twitch](https://www.twitch.tv/eksandral)
+
