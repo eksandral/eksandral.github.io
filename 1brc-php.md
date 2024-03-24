@@ -7,7 +7,7 @@ date: 2024-03-21
 ---
 ## It's All Gone ThePrimeagen.
 Everything started form the ThePrimeagen video where he was reactingt to [1BRC in GO](https://www.youtube.com/watch?v=cYng524S-MA).
-A few weeks later, in the internal company's chat, I saw (a link to an article on 1BRC in PHP)[https://dev.to/realflowcontrol/processing-one-billion-rows-in-php-3eg0], and people were discussing it.
+A few weeks later, in the internal company's chat, I saw [a link to an article on 1BRC in PHP](https://dev.to/realflowcontrol/processing-one-billion-rows-in-php-3eg0), and people were discussing it.
 Then, I thought,hmm... am I capable of doing it? Am I good enough in PHP for that?
 My main concert was that I have a skill issue in multi-thread PHP. Never used it for tasks where other languages are better.
 So let's find out...
